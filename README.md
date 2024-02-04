@@ -6,10 +6,10 @@
 ## Overview
 
 This repository contains the Cypress test suite for the Sanber53 project, developed by Kelompok15. Cypress is a powerful end-to-end testing framework that makes it easy to write and execute reliable tests for web applications.
-- Muhammad Fikri Fadillah
-- Nurul Azdnan (nurul.azdnan@gmail.com)
-- Mohammad Nasrul Azis (mohammadnasrulazis@gmail.com)
-- Muhammad Refri Ansyari (refriansyari@gmail.com)
+- Muhammad Fikri Fadillah (fadillahfikri48@gmail.com) => Choose Product & View - Updates Cart
+- Nurul Azdnan (nurul.azdnan@gmail.com) => Create Account & Login
+- Mohammad Nasrul Azis (mohammadnasrulazis@gmail.com) => Process To CheckOut & Search Product
+- Muhammad Refri Ansyari (refriansyari@gmail.com) => Edit Account Information & Edit Address
 - Amarullah Jun Haq
 
 ## Getting Started
