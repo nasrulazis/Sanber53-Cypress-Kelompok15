@@ -1,8 +1,4 @@
 class EditAccount {
-
-
-    
-
     fieldFirstName = '#firstname'
     fieldLastName = '#lastname'
     fieldEmail = '#email'
@@ -25,48 +21,48 @@ class EditAccount {
     //credential
     newFirstName = 'John'
     newLastName = 'Doe'
-    currentEmail = 'test.sanbercode12345@yopmail.com'
-    newEmail = 'test.sanbercode@yopmail.com'
+    currentEmail = 'test.sanbercode@yopmail.com'
+    newEmail = 'test.sanbercode12345@yopmail.com'
     wrongEmail = 'lorem ipsum'
     currentPassword = 'Password12345'
     newPassword = 'Password123'
 
 
-    loginUser(){
-        cy.get(this.btnMenuSignIn).click() 
+    loginUser() {
+        cy.get(this.btnMenuSignIn).click()
         cy.get(this.fieldEmail).type(`${this.currentEmail}`)
         cy.get(this.fieldPassword).type(`${this.currentPassword}`)
         cy.get(this.btnSignIn).click()
 
     }
 
-    navigateToEditPage(){
+    navigateToEditPage() {
         cy.wait(2000)
         cy.get(this.dropdownMenuAccount).click()
         cy.get(this.dropdownItemAccount).click()
         cy.get(this.btnEdit).click()
     }
 
-    verifyChangeAccountDataSuccess(){
+    verifyChangeAccountDataSuccess() {
         cy.get(this.fieldFirstName).clear().type(`${this.newFirstName}`)
         cy.get(this.fieldLastName).clear().type(`${this.newLastName}`)
         cy.get(this.btnSave).click()
     }
 
-    verifyChangeAccountDataFailed(){
+    verifyChangeAccountDataFailed() {
         cy.get(this.fieldFirstName).clear()
         cy.get(this.fieldLastName).clear()
         cy.get(this.btnSave).click()
     }
 
-    verifyChangeEmailSuccess(){ 
+    verifyChangeEmailSuccess() {
         cy.get(this.checkBoxEmail).check()
         cy.get(this.fieldEmail).clear().type(`${this.newEmail}`)
         cy.get(this.fieldCurrentPassword).clear().type(`${this.currentPassword}`)
         cy.get(this.btnSave).click()
     }
 
-    reverseEmailCreds(){
+    reverseEmailCreds() {
         cy.get(this.fieldEmail).type(`${this.newEmail}`)
         cy.get(this.fieldPassword).type(`${this.currentPassword}`)
         cy.get(this.btnSignIn).click()
@@ -79,14 +75,14 @@ class EditAccount {
         cy.get(this.btnSave).click()
     }
 
-    verifyChangeEmailFailed(){
+    verifyChangeEmailFailed() {
         cy.get(this.checkBoxEmail).check()
         cy.get(this.fieldEmail).clear().type(`${this.wrongEmail}`)
         cy.get(this.fieldCurrentPassword).clear().type(`${this.currentPassword}`)
         cy.get(this.btnSave).click()
     }
 
-    verifyChangePasswordSuccess(){
+    verifyChangePasswordSuccess() {
         cy.get(this.checkBoxPassword).check()
         cy.get(this.fieldCurrentPassword).clear().type(`${this.currentPassword}`)
         cy.get(this.fieldNewPassword).clear().type(`${this.newPassword}`)
@@ -94,7 +90,7 @@ class EditAccount {
         cy.get(this.btnSave).click()
     }
 
-    reversePasswordCreds(){
+    reversePasswordCreds() {
         cy.get(this.fieldEmail).type(`${this.currentEmail}`)
         cy.get(this.fieldPassword).type(`${this.newPassword}`)
         cy.get(this.btnSignIn).click()
@@ -108,7 +104,7 @@ class EditAccount {
         cy.get(this.btnSave).click()
     }
 
-    verifyChangePasswordFailed(){
+    verifyChangePasswordFailed() {
         cy.get(this.checkBoxPassword).check()
         cy.get(this.fieldCurrentPassword).clear().type(`${this.currentPassword}`)
         cy.get(this.fieldNewPassword).clear().type(`1`)

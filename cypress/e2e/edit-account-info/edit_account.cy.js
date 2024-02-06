@@ -18,7 +18,7 @@ describe('Edit Account Information', () => {
         EditAccount.verifyChangeAccountDataFailed()
         cy.get('#firstname-error').should('be.visible')
         cy.get('#lastname-error').should('be.visible')
-    
+
     })
 
     //Change user's email - positive
@@ -41,7 +41,7 @@ describe('Edit Account Information', () => {
         EditAccount.reversePasswordCreds()
     })
 
-     //Change user's password - negative
+    //Change user's password - negative
     it('Failed changing user password - Invalid Format', () => {
         EditAccount.verifyChangePasswordFailed()
         cy.get('#password-error').contains('Minimum length of this field must be equal or greater than 8 symbols. Leading and trailing spaces will be ignored.')
