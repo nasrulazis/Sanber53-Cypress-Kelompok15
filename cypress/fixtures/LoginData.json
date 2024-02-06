@@ -1,0 +1,16 @@
+{
+    "correct-logindata":{
+        "email1": "gapoc93935@namewok.com",
+        "email2": "gapoc93936@namewok.com",
+        "defaultpassword": "Qwerty12345",
+        "new-password": "Qwerty123456"
+
+    },
+    "wrong-logindata":{
+        "invalid-email": "gapoc93935@namewok",
+        "wrong-email": "gapoc939234123131335@namewok.com",
+        "wrong-password": "Qwerty1234"
+    }
+    
+
+}
