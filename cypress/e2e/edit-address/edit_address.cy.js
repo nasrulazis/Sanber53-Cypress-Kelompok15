@@ -18,6 +18,7 @@ describe('Edit User Address', () => {
             cy.get('.message-success').should('be.visible')
         })
 
+        //Change user's billing address - negative
         it('Failed changing billing address - Empty Input', () => {
 
             EditAddress.verifyChangeAddressFailed()
@@ -37,12 +38,13 @@ describe('Edit User Address', () => {
         beforeEach(() => {
             EditAddress.navigateToEditShippingAddressPage()
         })
-        //Change user's billing address - positive
+        //Change user's shipping address - positive
         it('Successfully changing shipping address', () => {
             EditAddress.verifyChangeAddressSuccess()
             cy.get('.message-success').should('be.visible')
         })
 
+        //Change user's shipping address - negative
         it('Failed changing shipping address - Empty Input', () => {
 
             EditAddress.verifyChangeAddressFailed()
