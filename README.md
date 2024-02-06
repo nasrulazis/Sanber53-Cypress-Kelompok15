@@ -10,7 +10,6 @@ This repository contains the Cypress test suite for the Sanber53 project, develo
 - Nurul Azdnan (nurul.azdnan@gmail.com) => Create Account & Login
 - Mohammad Nasrul Azis (mohammadnasrulazis@gmail.com) => Process To CheckOut & Search Product
 - Muhammad Refri Ansyari (refriansyari@gmail.com) => Edit Account Information & Edit Address
-- Amarullah Jun Haq
 
 ## Getting Started
 
