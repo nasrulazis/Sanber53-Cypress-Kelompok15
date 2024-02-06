@@ -1,0 +1,16 @@
+{
+    "correct-createaccountdata":{
+        "default-password": "Qwerty12345",
+        "first-name": "Cypress",
+        "last-name": "Testing"
+
+    },
+    "wrong-createaccountdata":{
+        "invalid-email": "gapoc93935@namewok",
+        "registered-email": "gapoc93935@namewok.com",
+        "wrong-password": "Qwerty1234567890"
+        
+    }
+    
+
+}
